@@ -1,0 +1,17 @@
+{
+    "scenarioName": "Get info",
+    "requiredScenarioState": "Started",
+    "request": {
+        "method": "GET",
+        "urlPath": "/info",
+		"queryParameters": {
+			"code": {
+				"matches": "missing_token_sc_1"
+			}
+		}
+    },
+    "response": {
+        "status": 401,
+		"body": "{\"error\": \"Unauthorized\",\"error_description\": \"string\"}"
+    }
+}

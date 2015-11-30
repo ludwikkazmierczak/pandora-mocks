@@ -1,0 +1,18 @@
+{
+	"request": {
+		"method": "GET",
+		"urlPath": "/info",
+		"queryParameters": {
+			"code": {
+				"matches": "valid_token"
+			}
+		}
+	},
+	"response": {
+		"status": 200,
+		"body": "{\"access_token\": \"yujf\", \"auth_method\": 0, \"expires_in\": 0, \"refresh_token\": \"string\",\"success\": true, \"success_description\": \"string\", \"token_type\": \"bearer\",\"user_id\": \"string\"}",
+		"headers": {
+			"Content-Type": "application/json"
+		}
+	}
+}

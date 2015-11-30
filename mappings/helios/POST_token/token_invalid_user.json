@@ -1,0 +1,13 @@
+{
+	"request": {
+		"method": "POST",
+		"urlPath": "/token",
+		"bodyPatterns" : [
+            { "equalToJson" : "{ \"username\": \"valid_user\", \"password\": \"invalid_password\" }", "jsonCompareMode": "LENIENT"}
+        ]
+	},
+	"response": {
+		"status": 401,		
+		"body": "{\"error\": \"string\",\"error_description\": \"string\"}"
+	}
+}

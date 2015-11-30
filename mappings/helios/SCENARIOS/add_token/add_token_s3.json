@@ -1,0 +1,20 @@
+{
+    "scenarioName": "Get info",
+    "requiredScenarioState": "Added token",
+    "request": {
+        "method": "GET",
+        "urlPath": "/info",
+		"queryParameters": {
+			"code": {
+				"matches": "missing_token_sc_1"
+			}
+		}
+    },
+    "response": {
+        "status": 200,
+		"body": "{\"access_token\": \"missing_token_sc_1\", \"auth_method\": 0, \"expires_in\": 0, \"refresh_token\": \"string\",\"success\": true, \"success_description\": \"string\", \"token_type\": \"bearer\",\"user_id\": \"string\"}",
+		"headers": {
+			"Content-Type": "application/json"
+		}    
+	}
+}
