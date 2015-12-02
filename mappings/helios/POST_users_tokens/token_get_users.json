@@ -4,6 +4,9 @@
 		"urlPattern": "/users/\\d+/tokens"
 	},
 	"response": {
+		"headers": {
+		        "Content-Type": "application/json"
+		},
 		"status": 200,		
 		"body": "{\"access_token\": \"string\",\"auth_method\": 0,\"expires_in\": 0,\"refresh_token\": \"string\",\"success\": true,\"success_description\": \"string\",\"token_type\": \"bearer\",\"user_id\": \"string\"}"
 	}
